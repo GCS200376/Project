@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const AccountSchema = new mongoose.Schema({
 
-    userName : {
+    UserName : {
         type: String,
         required: true,
         trim: true,

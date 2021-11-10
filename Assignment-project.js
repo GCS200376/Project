@@ -35,9 +35,7 @@ const hostname = "localhost";
 
 const port = process.env.PORT || 3000;
 
-app.listen( port, () => {
-    console.log("Start SERVER - LISTEN ", port);
-});
+
 
 const url =  "mongodb+srv://Dat:Dat@cluster0.qkshg.mongodb.net/Account?retryWrites=true&w=majority"
 
@@ -69,3 +67,6 @@ app.use(
 const accountRouter = require("./routes/accountRoute");
 app.use("/account", accountRouter);
 
+app.listen( port, () => {
+    console.log("Start SERVER - LISTEN ", port);
+});
