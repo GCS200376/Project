@@ -4,8 +4,7 @@
   "description": "",
   "main": "Assignment project.js",
   "scripts": {
-    "start": "node Assignment-project.js",
-  },
+    "start": "node Assignment-project.js"},
   "author": "",
   "license": "ISC",
   "dependencies": {
