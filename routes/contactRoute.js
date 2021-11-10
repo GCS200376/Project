@@ -9,9 +9,7 @@ const router = express.Router();
 router.get("/", 
     (req, res) => {
 
-        res.writeHead(200);
-        var data = fs.readFileSync("./views/contact.html");
-        res.end(data.toString());
+        res.render("contact");
 });
 
 //////////////////////////////////////////

@@ -67,6 +67,9 @@ app.use(
 const accountRouter = require("./routes/accountRoute");
 app.use("/account", accountRouter);
 
+const contactRouter = require("./routes/contactRoute");
+app.use("/contact", contactRouter);
+
 app.listen( port, () => {
     console.log("Start SERVER - LISTEN ", port);
 });
