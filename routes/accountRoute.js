@@ -1,6 +1,6 @@
 
 const express = require("express");
-const accountModel = require("../models/account");
+const accountModel = require("../models/Account");
 
 const router = express.Router();
 
@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     try {
         // console.log(accounts);
         // res.send(accounts);
-        res.render("account-display");
+        res.render("account", { Account : accounts });
     } catch (error) {
         res.status(500).send(error);
     }

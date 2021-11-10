@@ -1,0 +1,22 @@
+    {{> header}}
+        <H1>
+            <title>[Admin] Display accounts ! </title>
+        </H1>
+
+<section>
+    <article class="panel">
+        <h1>Display name</h1>
+        {{#each Account}}
+        <div class="article-content">
+
+            <figure>
+                <p><b>User name: </b>{{this.UserName}}</p>
+                <p><b>Full name: </b>{{this.FullName}}</p>
+                <img src={{this.avatarlink}}/>
+            </figure>
+        </div>
+        {{/each}}
+    </article>
+</section>
+
+    {{> footer}}
