@@ -32,9 +32,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const hostname = "localhost";
+
 const port = process.env.PORT || 3000;
 
-const url =  "mongodb+srv://newUser01:wdXnHi7GftQ8erhZ@cluster0.s7ukh.mongodb.net/ATNWeb211015?retryWrites=true&w=majority"
+app.listen( port, () => {
+    console.log("Start SERVER - LISTEN ", port);
+});
+
+const url =  "mongodb+srv://Dat:Dat@cluster0.qkshg.mongodb.net/Account?retryWrites=true&w=majority"
 
 const mongoose = require("mongoose");
 mongoose.connect(
@@ -64,6 +69,3 @@ app.use(
 const accountRouter = require("./routes/accountRoute");
 app.use("/account", accountRouter);
 
-app.listen( port, () => {
-    console.log("Start SERVER - LISTEN ", port);
-});

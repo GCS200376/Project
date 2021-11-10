@@ -4,7 +4,7 @@
   "description": "",
   "main": "Assignment project.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Assignment-project.js",
   },
   "author": "",
   "license": "ISC",

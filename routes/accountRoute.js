@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     try {
         // console.log(accounts);
         // res.send(accounts);
-        res.render("account", { accounts : accounts });
+        res.render("account-display");
     } catch (error) {
         res.status(500).send(error);
     }
@@ -20,9 +20,6 @@ router.get("/create", async (req, res) => {
     res.render("account-create" );
 });
 
-router.get("/display", async (req, res) => {
-    res.send("acount-display");
-});
 
 router.post("/", async (req, res) => {
     const account = new accountModel(req.body);
