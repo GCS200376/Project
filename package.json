@@ -11,6 +11,7 @@
     "mongodb": "^4.1.4",
     "mongoose": "^6.0.12"
   },
+
   "devDependencies": {},
   "scripts": {
     "start": "node Assignment-project.js"
